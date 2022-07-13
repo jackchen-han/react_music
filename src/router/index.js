@@ -17,6 +17,8 @@ const routes = [
     component:HYMine
   }
 
+  
+
 ]
 
 export default routes;
