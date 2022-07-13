@@ -13,7 +13,10 @@ const HYAppHeader = memo(() => {
   const showSelectItem = (item,index)=>{
     if(index < 3){
       return (
-        <NavLink to={item.link}>{item.title}</NavLink>
+        <NavLink to={item.link} exact>
+          {item.title}
+          <i className='sprite_01 icon'></i>
+        </NavLink>
       )
     }else{
       return <a href={item.link}>{item.title}</a>

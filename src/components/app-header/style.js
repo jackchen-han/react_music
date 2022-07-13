@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
   height: 75px;
+  font-size:14px;
   background-color:#242424;
 
   .content {
@@ -59,10 +60,20 @@ export const HeaderLeft = styled.div`
           right:-15px;
         }
       }
-      &:hover a, &.active a {
+      &:hover a, a.active {
         color:#fff;
         background: #000;
         text-decoration: none;
+      }
+      .active .icon {
+        position:absolute;
+        display:inline-block;
+        width:12px;
+        height: 7px;
+        bottom:-1px;
+        left:50%;
+        transform: translate(-50%,0);
+        background-position: -226px 0;
       }
     }
   }
