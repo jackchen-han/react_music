@@ -19,7 +19,30 @@ export const HeaderWrapper = styled.div`
 
 `
 export const HeaderRight = styled.div`
-
+  display:flex;
+  align-items: center;
+  color:#ccc;
+  .search{
+    border-radius: 16px;
+    width: 158px;
+    height: 32px;
+    input {
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+  }
+  .center {
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 16px;
+    border: 1px solid #666;
+    border-radius: 20px;
+    color:#ccc;
+    cursor: pointer;
+  }
 `
 
 export const HeaderLeft = styled.div`
