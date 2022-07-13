@@ -22,6 +22,9 @@ export const HeaderRight = styled.div`
   display:flex;
   align-items: center;
   color:#ccc;
+  div{
+    cursor:pointer;
+  }
   .search{
     border-radius: 16px;
     width: 158px;
@@ -38,11 +41,16 @@ export const HeaderRight = styled.div`
     line-height: 32px;
     text-align: center;
     margin: 0 16px;
-    border: 1px solid #666;
+    border: 1px solid #4f4f4f;
     border-radius: 20px;
-    color:#ccc;
+    color:#4f4f4f;
     cursor: pointer;
+    &:hover  {
+      border:1px solid #ccc;
+      color:#ccc;
+    }
   }
+
 `
 
 export const HeaderLeft = styled.div`
