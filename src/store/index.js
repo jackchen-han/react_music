@@ -5,12 +5,5 @@ import thunk from 'redux-thunk';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({trace:true}) || compose;
 const storeEnhance = applyMiddleware(thunk)
 const store = createStore(reducer,composeEnhancers(storeEnhance))
-
-<<<<<<< .merge_file_irdg5t
-
-
-const store = createStore(reducer,applyMiddleware(thunk))
-=======
-export default store 
->>>>>>> .merge_file_f9L329
+export default store
 
