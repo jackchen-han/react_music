@@ -3,6 +3,7 @@ import { DiscoverWrapper,TopMenu } from './style';
 import { discoverMenu } from '@/common/local-data'
 import { NavLink } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
+import store from '@/store/index.js'
 import request from '@/services/request'
 const HYDiscover = memo((props) => {
   const { route } = props
